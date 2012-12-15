@@ -1,0 +1,11 @@
+The program gives inputs: n = # of servers; m = # of cables; S = start serve; T = end server
+The next m lines give you info on cables: to, from, time (the cables are bidirectional)
+You are to find the shortest time if one exists from the start cable to the end cable.
+You can solve this using dijkstra's algorithm.
+
+How to solve cpp: To solve using c++ you need to create a class to compare for the priority queue.
+You can do this by search the c++ api.
+
+How to solve java: You need to create your own server class. Use dijkstra.
+
+*there is a lot of input so improper implementation of dijkstra will time out.
