@@ -1,0 +1,5 @@
+This problem asks the user to find all combinations of U & L of lengths up to 30 that have at least 3 U's in a row.
+If this is a competition setting then the correct answer is to test each combination which requires 2^N (350Brute.cpp). Of 
+course this answer would time out, that's why you have the program run in the background and generate the output.
+If you have time to think up an answer then you might come up with a solution in 580.cpp or 580.java, both
+have the same implementation.
