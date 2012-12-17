@@ -1,0 +1,21 @@
+The problem gives the user a list of coins and asks how to best divide the list.
+The first thing to realize is that this is not a greedy problem.
+Let's say that you are given a list of coins worth 500, 300, 400, 300, 500.
+You then sort the coins: 500, 500, 400, 300, 300 and apply greedy.
+0 + 500 = 500
+500 - 500 = 0
+0 + 400 = 400
+400 - 300 = 100
+100 - 300 = -200
+The result is a 200 difference in coin values.
+The next step to realize is that you can generate all possible outputs by adding and subtracting
+at each step. So let's say that you start with a set {0};
+0 + 500 = 500; 0 - 500 = -500; set = {-500, 500};
+-500 + 300 = -200; -500 - 300 = -800; 500 + 300 = 800; 500 - 300 = 200; set = {-800, -200, 200, 800}
+At this point you can observe a mirrored effect when you add and subtract. This means that we only
+need to keep the positive values. set = {200, 800};
+200 - 400 = 200; 200 + 400 = 600; 800 - 400 = 400; 800 + 400 = 1200; set = {200, 400, 600, 1200};
+and so on...
+The solution described above can be viewed in 562alt.cpp this however is not the desired knapsack solution
+even though it simulate a knapsack. To achieve an optimal solution one should first review
+the basic knapsack problem. After that you can take a look at 562.cpp or 562.java.
