@@ -1,0 +1,4 @@
+This problem is really simple. Just read in data. Sort it, and read out sorted data.
+
+java: make sure to read in using BufferedReader and use StringBuilder to store output and just print it once.
+c++: c++ is fast, you can probably do it any way.
