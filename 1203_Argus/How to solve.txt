@@ -1,0 +1,8 @@
+This problems gives you a list of registers and the period of time it takes to return the result.
+You are then given the amount of outputs you want from these registers. You can solve this problem
+with a priority queue. You need to first compare the registers by their total time and then by
+their ids. Each time you take out a register you increment the total time by the period of time it
+takes to return the result.
+
+For the java solution I included answers using both Comparable and Comparator. I also included a 
+binary heap version so you can take a look at the internal workings of a priority queue.

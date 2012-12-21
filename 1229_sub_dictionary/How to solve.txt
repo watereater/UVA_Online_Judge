@@ -1,0 +1,5 @@
+This problem is a bit tricky. It says that for every word in a dictionary, all their definitions must also be words in the
+dictionary. To make this simple, it means that the definitions be equal the words. To solve this you must do breath first search
+on every word and find also possible connections by going from word to defintions and starting at those definitions. Once you 
+finish the bfs you check is definitions == words in dictionary. At the end simply print out the possible solution. See code for
+more clarity.
